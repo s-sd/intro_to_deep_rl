@@ -85,7 +85,7 @@ for _ in range(4):
     # env.render()
     action = env.action_space.sample()
     obs, reward, done, _ = env.step(action)
-    print(f'The observation is {obs} and the agent picked {action}')
+    print(f'The observation is {obs} and the agent picked {action} for the number {env.number}')
     if done:
         env.reset()
 
